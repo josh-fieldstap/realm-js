@@ -30,7 +30,7 @@ exec("npm --version", (err, stdout) => {
   const verRegex = /^(\d+\.)?(\d+\.)?(\*|\d+)$/;
   const npmVer = stdout.trim();
   if (!verRegex.test(npmVer)) {
-    console.error(`npm --version returned '${npmVer}. Is Node installed?`);
+    console.error(`npm --version returned '${npmVer}. Hey! Is Node installed?`);
     process.exit(-1);
   }
   successLog(`npm version is ${npmVer}`);
