@@ -3,7 +3,7 @@ if command -v ccache &> /dev/null; then
 # reference for xcode specific cacche settings: reactnative docs and ccache manpage
 # https://reactnative.dev/docs/build-speed#xcode-specific-setup
 # https://ccache.dev/manual/4.3.html
-  export CCACHE_MAXSIZE=10G
+  export CCACHE_MAXSIZE=4G
   export CCACHE_CPP2=true
   export CCACHE_DIRECT=true
   export CCACHE_DEPEND=true
